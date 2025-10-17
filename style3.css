@@ -1,0 +1,105 @@
+/* CSS untuk styling umum : */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d2e2eb; /* Latar lembut, tidak menyilaukan */
+            color: #333; /* Teks hitam gelap untuk kenyamanan membaca */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px; /* Ukuran font dasar */
+        }
+
+        header {
+            background-color: hsl(343, 94%, 87%); /* pink aksen untuk header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Bayangan untuk tampilan modern */
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            background-color: hsl(343, 94%, 87%); /* pink untuk tombol */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px; /* Sudut melengkung */
+            transition: background-color 0.3s; /* Efek hover */
+        }
+
+        nav a:hover {
+            background-color: hsl(343, 94%, 87%); /* pink lebih gelap saat hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff; /* Latar putih untuk konten */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Bayangan ringan */
+        }
+
+        h1, h2 {
+            color: hsl(353, 38%, 52%); /* Heading merah jambu untuk aksen */
+        }
+
+        /* Styling tabel untuk Jadwal Kuliah */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: hsl(343, 94%, 87%);
+            color: white;
+        }
+
+        /* Styling untuk font kecil dan tidak bold */
+        .small-font {
+            font-size: 0.9em; /* Ukuran lebih kecil, mirip dengan kalimat acuan */
+            font-weight: normal; /* Tidak bold */
+        }
+
+        /* Styling baru untuk bold dan biru */
+        .bold-blue {
+            font-weight: bold; /* Membuat bold */
+            color: hsl(344, 59%, 70%); /* Warna pink aksen */
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+            table {
+                font-size: 14px;
+            }
+            .small-font {
+                font-size: 0.8em; /* Lebih kecil lagi untuk mobile */
+            }
+            .bold-blue {
+                font-size: 0.95em; /* Sesuaikan agar tetap responsif */
+            }
+        }

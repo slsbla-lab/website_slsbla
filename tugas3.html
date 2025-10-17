@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pribadi by slsbla</title>
+    <style>
+        /* CSS untuk styling umum : */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d2e2eb; /* Latar lembut, tidak menyilaukan */
+            color: #333; /* Teks hitam gelap untuk kenyamanan membaca */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px; /* Ukuran font dasar */
+        }
+
+        header {
+            background-color: hsl(343, 94%, 87%); /* pink aksen untuk header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Bayangan untuk tampilan modern */
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            background-color: hsl(343, 94%, 87%); /* pink untuk tombol */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px; /* Sudut melengkung */
+            transition: background-color 0.3s; /* Efek hover */
+        }
+
+        nav a:hover {
+            background-color: hsl(343, 94%, 87%); /* pink lebih gelap saat hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff; /* Latar putih untuk konten */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Bayangan ringan */
+        }
+
+        h1, h2 {
+            color: hsl(353, 38%, 52%); /* Heading merah jambu untuk aksen */
+        }
+
+        /* Styling tabel untuk Jadwal Kuliah */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: hsl(343, 94%, 87%);
+            color: white;
+        }
+
+        /* Styling untuk font kecil dan tidak bold */
+        .small-font {
+            font-size: 0.9em; /* Ukuran lebih kecil, mirip dengan kalimat acuan */
+            font-weight: normal; /* Tidak bold */
+        }
+
+        /* Styling baru untuk bold dan biru */
+        .bold-blue {
+            font-weight: bold; /* Membuat bold */
+            color: hsl(344, 59%, 70%); /* Warna pink aksen */
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+            table {
+                font-size: 14px;
+            }
+            .small-font {
+                font-size: 0.8em; /* Lebih kecil lagi untuk mobile */
+            }
+            .bold-blue {
+                font-size: 0.95em; /* Sesuaikan agar tetap responsif */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Pribadi</h1>
+        <p>Data Pribadi Digital, Menampilkan Informasi Diri Saya.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#jadwal-kuliah">Jadwal Kuliah</a>
+        <a href="#aktivitas">Aktivitas</a>
+        <a href="#informasi-tambahan">Informasi Tambahan</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Perkenalkan nama saya Salsabila Khoirunnisa, biasa dipanggil salsa. Saya merupakan anak kedua dari tiga bersaudara. Saya adalah individu yang memiliki semangat belajar tinggi, disiplin, dan bertanggung jawab dalam setiap tugas yang saya jalani. Saya senang mencoba hal-hal baru serta mudah beradaptasi dengan lingkungan dan tim kerja yang beragam. Saya memiliki minat besar di bidang pariwisata dan terus berusaha mengembangkan kemampuan saya agar dapat memberikan kontribusi positif di bidang tersebut. Dengan sikap terbuka, kreatif, dan komunikatif, saya berkomitmen untuk terus tumbuh dan belajar menjadi pribadi yang lebih baik serta bermanfaat bagi lingkungan sekitar.</p>
+    </section>
+
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <p>Berikut adalah Riwayat Pendidikan Saya :</p>
+        <ul>
+            <li><strong>Sekolah Dasar :</strong> SD Negeri 1 Petir (2011–2017)</li>
+            <li><strong>Sekolah Menengah Pertama :</strong> SMP Negeri 3 Kalibagor (2017–2020)</li>
+            <li><strong>Sekolah Menengah Kejuruan :</strong> SMK Negeri 1 Banyumas (2020–2023)</li>
+        </ul>
+    </section>
+
+    <section id="jadwal-kuliah">
+        <h2>Jadwal Kuliah</h2>
+        <p>Berikut adalah Jadwal Kuliah Saya di Semester 3 ini :</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Hari</th>
+                    <th>Jam</th>
+                    <th>Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Ruang</th>
+                    <th>T/P</th>
+                    <th>Kelas</th>
+                    <th>Dosen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Senin</td>
+                    <td>14.20 – 16.00<br>16.15 – 17.55</td>
+                    <td>PSSIW015 Pemrograman Web</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.3.2<br>Gedung 1 - Lab 6</td>
+                    <td>Teori & Praktik</td>
+                    <td>SI24B</td>
+                    <td>Tyas Pratama Puja Kusuma</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Senin</td>
+                    <td>07.00 – 08.40</td>
+                    <td>USSIW047 Bahasa Inggris</td>
+                    <td>2</td>
+                    <td>Gedung 1 - R.2.2</td>
+                    <td>Teori</td>
+                    <td>SI24B</td>
+                    <td>Zulia Karini</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Selasa</td>
+                    <td>10.40 – 12.20<br>12.30 – 14.10</td>
+                    <td>PSSIW066 Interaksi Manusia dan Komputer</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.4.3</td>
+                    <td>Teori</td>
+                    <td>SI24B</td>
+                    <td>Argiyan Dwi Pritama</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Rabu</td>
+                    <td>10.40 – 12.20<br>12.30 – 14.10</td>
+                    <td>PSSIW067 Manajemen Proyek Teknologi Informasi dan Komunikasi</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.3.2</td>
+                    <td>Teori</td>
+                    <td>SI24B</td>
+                    <td>Fiby Nur Afiana</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rabu</td>
+                    <td>14.20 – 16.00<br>16.15 – 17.55</td>
+                    <td>PSSIW014 Pemrograman Berorientasi Objek</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.3.7<br>Gedung 1 - Lab 6</td>
+                    <td>Teori & Praktik</td>
+                    <td>SI24B</td>
+                    <td>Gustin Setyaningsih</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kamis</td>
+                    <td>16.15 – 17.55<br>18.00 – 18.55</td>
+                    <td>PSSIP052 IS Strategy, Management and Acquisition</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.2.4</td>
+                    <td>Teori</td>
+                    <td>SI24A</td>
+                    <td>Jeffri Prayitno Bangkit Saputra</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Jumat</td>
+                    <td>08.50 – 10.30<br>10.40 – 12.20</td>
+                    <td>PSSIP051 Audit Sistem Informasi</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.3.3</td>
+                    <td>Teori</td>
+                    <td>SI24A</td>
+                    <td>Jeffri Prayitno Bangkit Saputra</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Sabtu</td>
+                    <td>10.40 – 12.20<br>12.30 – 14.10</td>
+                    <td>PSSIW036 Kecerdasan Bisnis</td>
+                    <td>3</td>
+                    <td>Gedung 1 - R.2.1<br>Gedung 1 - Lab 2</td>
+                    <td>Teori & Praktik</td>
+                    <td>SI24B</td>
+                    <td>Nurfaziah</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="aktivitas">
+        <h2>Aktivitas</h2>
+        <p class="small-font">Kegiatan/Pengalaman/Organisasi yang saya miliki atau saya lakukan, berikut ringkasannya :</p>
+        <ul>
+            <li class="small-font">Pelatihan Kecakapan Wirausaha (Bidang Pastry and Bakery) selama 2 bulan, tahun 2024.</li>
+            <li class="small-font">Aktif mengikuti volunteer (Relawan Generasi Cerdas) mengajar di SDN 1 Tanjung selama 2 bulan, sekarang.</li>
+            <li class="small-font">Sebagai anggota UKM ASSEM di Universitas Amikom Purwokerto.</li>
+        </ul>
+    </section>
+
+    <section id="informasi-tambahan">
+        <h2>Informasi Tambahan</h2>
+        <p class="small-font">Untuk membuat tampilan seperti CV, saya tambahkan detail pribadi. Saya juga sertakan tugas saya sebagai mahasiswa Amikom.</p>
+        
+        <h3 class="small-font bold-blue">Makanan Kesukaan</h3>
+        <p class="small-font">Makanan kesukaan saya : Mie Ayam, Bakso, Soto Sokaraja, dan Pecel.</p>
+        
+        <h3 class="small-font bold-blue">Hobby</h3>  
+        <p class="small-font">Hobby Saya :</p>
+        <ul>
+            <li class="small-font">Bepergian/Traveling</li>
+            <li class="small-font">Berburu kuliner</li>
+            <li class="small-font">Nonton Series/Serial Drama LN</li>
+        </ul>
+        
+        <h3 class="small-font bold-blue">Tugas Minggu Ini :</h3>
+        <p class="small-font">Berikut adalah tugas yang diberikan oleh dosen kepada saya :</p>
+        <ul>
+            <li class="small-font">Senin : Tugas PemWeb (Teori : tugas kelompok membuat materi css di ppt) & mengerjakan praktikum 3</li>
+            <li class="small-font">Selasa : Tugas IMK encari dan mereview 4 desain UI/UX yang membuat 4 tingkatan Hierarchy Of User Needs</li>
+            <li class="small-font">Rabu : Tugas PBO mengerjakan modul 11</li>
+            <li class="small-font">Jum'at : Tugas Audit SI untuk mengaudit perusahaan</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p class="small-font">&copy; 2025 by slsbla. Dibuat untuk keperluan tugas.</p>
+    </footer>
+</body>
+</html>
